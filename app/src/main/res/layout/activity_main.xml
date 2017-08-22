@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pkr.pushup.MainActivity"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/push_up_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="null"
+        android:textSize="128dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="touchFunc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:id="@+id/proximity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#212121"
+            android:text="Proximity"
+            android:layout_weight="1"
+            android:onClick="sProximityButton"/>
+        <Button
+            android:id="@+id/touch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#212121"
+            android:text="Touch"
+            android:layout_weight="1"
+            android:onClick="sTouchButton"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginBottom="32dp"
+        android:background="#212121"
+        android:textColor="#ffffff"
+        android:onClick="reset"/>
+
+</LinearLayout>
